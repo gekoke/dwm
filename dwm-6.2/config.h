@@ -43,10 +43,12 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "firefox",  NULL,       NULL,       1 << 0,       0,           -1 },
-	{ "discord",  NULL,       NULL,       1 << 2,       0,           -1 },
-	{ "TeamSpeak 3",  NULL,       NULL,       1 << 2,       0,           -1 },
-	{ "Code",  NULL,       NULL,       1 << 1,       0,           -1 },
+    // last value is there because JetBrains are naughty naughty
+	{ "firefox",  NULL,       NULL,       1 << 0,       0,           -1, 0 },
+	{ "discord",  NULL,       NULL,       1 << 2,       0,           -1, 0 },
+	{ "TeamSpeak 3",  NULL,       NULL,       1 << 2,       0,           -1, 0 },
+	{ "Code",  NULL,       NULL,       1 << 1,       0,           -1, 0},
+	{ "jetbrains-idea-ce",  NULL,       NULL,       1 << 1,       0,           -1, 1},
 };
 
 /* layout(s) */
